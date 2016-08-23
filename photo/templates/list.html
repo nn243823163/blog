@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div style="font-size: 30px;"><h5>{{ get_title }}</h5></div><br>
+<div style="font-size: 20px;"><a href="{{ get_url }}">原帖地址</a></div><br><br>
+
+{% for photo in get_links %}
+<div style=" width: 864px;height: 486px">
+    <img style="width: 864px;height: 486px" src="{{ photo }}" alt="">
+</div><br><br><br>
+{% endfor %}
+
+{% endblock %}

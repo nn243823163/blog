@@ -269,3 +269,790 @@ SyntaxError: invalid syntax
 2016-08-01 19:39:00,424 [Thread-18:21440] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
 2016-08-01 19:39:00,792 [Thread-31:11148] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
 2016-08-01 19:39:00,831 [Thread-30:7100] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-08-13 02:00:38,412 [Thread-7:4421111808] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-13 02:00:38,490 [Thread-8:4404023296] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-13 02:00:38,498 [Thread-9:4404023296] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-13 02:00:38,506 [Thread-10:4404023296] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-13 02:00:38,518 [Thread-11:4404023296] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-13 02:00:38,535 [Thread-12:4404023296] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-13 02:00:38,558 [Thread-13:4404023296] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-13 02:00:38,573 [Thread-14:4408229888] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-13 02:00:38,588 [Thread-15:4412698624] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-13 02:00:38,596 [Thread-16:4408229888] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-13 02:00:38,876 [Thread-30:4404023296] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-08-13 02:00:59,423 [Thread-31:4404023296] [django.request:170] [base:get_response] [WARNING]- Not Found: /news.html
+2016-08-13 02:01:04,272 [Thread-32:4404023296] [django.request:170] [base:get_response] [WARNING]- Not Found: /a.html
+2016-08-13 02:05:29,195 [Thread-7:4383113216] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-13 02:05:29,212 [Thread-8:4362080256] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-13 02:05:29,241 [Thread-9:4362080256] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-13 02:05:29,262 [Thread-10:4362080256] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-13 02:05:29,282 [Thread-11:4362080256] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-13 02:05:29,317 [Thread-12:4362080256] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-13 02:05:29,447 [Thread-13:4362080256] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-13 02:05:29,449 [Thread-14:4366286848] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-13 02:05:29,451 [Thread-15:4370493440] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-13 02:05:29,476 [Thread-16:4374700032] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-13 02:11:46,799 [Thread-2:4383444992] [django.request:170] [base:get_response] [WARNING]- Not Found: /test1
+2016-08-13 02:14:45,779 [Thread-3:4334829568] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /add/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blogproject/views.py", line 10, in add
+    b = request.GET['b']
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'b'"
+2016-08-13 02:15:14,429 [Thread-8:4331094016] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /add/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blogproject/views.py", line 10, in add
+    b = request.GET['b']
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'b'"
+2016-08-13 02:21:05,519 [Thread-2:4454354944] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /add/1/2
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blogproject/views.py", line 9, in add
+    a = request.GET['a']
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'a'"
+2016-08-13 02:44:19,474 [Thread-3:4366536704] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /test1/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 40, in test1
+    return render(request,'test1.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: test1.html
+2016-08-13 02:46:11,576 [Thread-3:4527755264] [django.request:170] [base:get_response] [WARNING]- Not Found: /test1/
+2016-08-13 02:48:37,991 [Thread-5:4527755264] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /test2/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 40, in test1
+    return render(request,'blog/test1.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 579, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 496, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'testblog' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2016-08-13 13:55:30,771 [Thread-3:4508893184] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-08-13 15:07:04,814 [Thread-2:4563406848] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 647, in is_valid_path
+    resolve(path, urlconf)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 522, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/doudou/Documents/python/blog/blogproject/urls.py", line 30
+    url(r'^article/$',article,name='article')
+      ^
+SyntaxError: invalid syntax
+2016-08-13 15:11:19,659 [Thread-2:4492103680] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 46, in article
+    for article_query in Article_query.content:
+AttributeError: 'QuerySet' object has no attribute 'content'
+2016-08-13 15:12:08,756 [Thread-2:4482011136] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 46, in article
+    for article_query in Article_query['content']:
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 177, in __getitem__
+    raise TypeError
+TypeError
+2016-08-13 15:15:42,565 [Thread-7:4358148096] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 47, in article
+    for article_query in Article_query['content']:
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 177, in __getitem__
+    raise TypeError
+TypeError
+2016-08-13 15:18:04,040 [Thread-8:4363481088] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 47, in article
+    for article_query in Article_query['content']:
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 177, in __getitem__
+    raise TypeError
+TypeError
+2016-08-13 15:19:25,678 [Thread-7:4506783744] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 46, in article
+    for article_query in Article_query.content:
+AttributeError: 'QuerySet' object has no attribute 'content'
+2016-08-13 15:31:29,552 [Thread-7:4420800512] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 51, in article
+    return render(request,'blog/article.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 639, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: '['content']' from 'article['content']'
+2016-08-13 15:33:15,209 [Thread-6:4508905472] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-13 15:33:15,229 [Thread-9:4500492288] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-13 15:33:15,242 [Thread-10:4500492288] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-13 15:33:15,277 [Thread-11:4500492288] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-13 15:33:15,293 [Thread-12:4500492288] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-13 15:33:15,302 [Thread-13:4504698880] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-13 15:33:15,481 [Thread-14:4500492288] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-13 15:33:15,504 [Thread-15:4504698880] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-13 15:33:15,516 [Thread-16:4508905472] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-13 15:33:15,526 [Thread-17:4513112064] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-13 15:37:41,867 [Thread-48:4504961024] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-13 15:37:41,883 [Thread-49:4509167616] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-13 15:37:41,894 [Thread-50:4513374208] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-13 15:37:41,905 [Thread-51:4517580800] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-13 15:37:41,914 [Thread-52:4525993984] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-13 15:37:41,915 [Thread-53:4500492288] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-13 15:37:41,932 [Thread-54:4500492288] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-13 15:37:41,943 [Thread-55:4504961024] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-13 15:37:41,953 [Thread-56:4500492288] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-13 15:37:47,009 [Thread-58:4504961024] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-13 15:38:04,515 [Thread-7:4603564032] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-13 15:38:04,533 [Thread-8:4586475520] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-13 15:38:04,540 [Thread-9:4586475520] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-13 15:38:04,551 [Thread-10:4586475520] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-13 15:38:04,559 [Thread-11:4586475520] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-13 15:38:04,566 [Thread-12:4586475520] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-13 15:38:04,581 [Thread-13:4586475520] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-13 15:38:04,583 [Thread-14:4590944256] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-13 15:38:04,600 [Thread-15:4595150848] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-13 15:38:04,614 [Thread-16:4599357440] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-13 15:55:59,391 [Thread-14:4550823936] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 51, in article
+    return render(request,'blog/article.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 37, in do_static
+    return StaticFilesNode.handle_token(parser, token)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/templatetags/static.py", line 124, in handle_token
+    "'%s' takes at least one argument (path to file)" % bits[0])
+TemplateSyntaxError: 'static' takes at least one argument (path to file)
+2016-08-13 15:57:46,761 [Thread-20:4550823936] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 51, in article
+    return render(request,'blog/article.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'STATIC_URL'
+2016-08-18 02:58:54,834 [Thread-2:4498788352] [django.request:170] [base:get_response] [WARNING]- Not Found: /
+2016-08-18 02:58:54,924 [Thread-3:4498788352] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-08-18 02:59:29,197 [Thread-7:4582330368] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-18 02:59:29,275 [Thread-8:4565504000] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-18 02:59:29,294 [Thread-9:4565504000] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-18 02:59:29,307 [Thread-10:4565504000] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-18 02:59:29,325 [Thread-11:4565504000] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-18 02:59:29,335 [Thread-12:4569710592] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-18 02:59:29,464 [Thread-16:4578123776] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-18 02:59:29,472 [Thread-15:4573917184] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-18 02:59:29,473 [Thread-17:4582854656] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-18 02:59:29,483 [Thread-18:4587061248] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-18 02:59:45,361 [Thread-31:4565504000] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-18 02:59:45,370 [Thread-32:4569710592] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-18 02:59:45,372 [Thread-33:4573917184] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-18 02:59:45,386 [Thread-34:4578123776] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-18 02:59:45,398 [Thread-35:4582854656] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-18 02:59:47,183 [Thread-37:4565504000] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-18 02:59:47,204 [Thread-38:4565504000] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-18 02:59:47,205 [Thread-39:4569710592] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-18 02:59:47,218 [Thread-40:4573917184] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-18 02:59:47,234 [Thread-41:4578123776] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-18 03:44:35,953 [Thread-7:4514086912] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-18 03:44:35,980 [Thread-8:4493053952] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-18 03:44:35,995 [Thread-9:4493053952] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-18 03:44:36,009 [Thread-10:4493053952] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-18 03:44:36,011 [Thread-11:4497260544] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-18 03:54:48,215 [Thread-28:4519342080] [django.request:170] [base:get_response] [WARNING]- Not Found: /api-auth
+2016-08-18 03:55:02,118 [Thread-32:4519342080] [django.request:170] [base:get_response] [WARNING]- Not Found: /api-auth/
+2016-08-18 05:41:43,914 [Thread-13:4342325248] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/3/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1519, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1467, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1078, in save_model
+    obj.save()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 710, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 738, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 803, in _save_table
+    forced_update)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 853, in _do_update
+    return filtered._update(values) > 0
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1366, "Incorrect string value: '\\xE5\\x93\\xA5\\xE5\\x93\\xA5...' for column 'title' at row 1")
+2016-08-18 05:42:59,184 [Thread-20:4342325248] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1467, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1078, in save_model
+    obj.save()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 710, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 738, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 822, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 861, in _do_insert
+    using=using, raw=raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1366, "Incorrect string value: '\\xE5\\x93\\xA5\\xE5\\x93\\xA5' for column 'title' at row 1")
+2016-08-18 05:44:11,245 [Thread-3:4537438208] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-18 05:44:11,260 [Thread-4:4541644800] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-18 05:44:11,280 [Thread-5:4545851392] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-18 05:44:11,297 [Thread-6:4550057984] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-18 05:44:11,311 [Thread-7:4554264576] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-18 05:44:56,099 [Thread-27:4533493760] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/2/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1519, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1467, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1078, in save_model
+    obj.save()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 710, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 738, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 803, in _save_table
+    forced_update)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 853, in _do_update
+    return filtered._update(values) > 0
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 580, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1062, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1366, "Incorrect string value: '\\xE5\\x95\\x8A\\xE5\\x95\\x8A...' for column 'title' at row 1")
+2016-08-18 05:51:25,545 [Thread-4:4516347904] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-18 05:51:25,546 [Thread-3:4512141312] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-18 05:51:25,576 [Thread-5:4520554496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-18 05:51:25,593 [Thread-6:4524761088] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-18 05:51:25,608 [Thread-7:4528967680] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-18 05:59:11,807 [Thread-3:4455583744] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-18 05:59:11,824 [Thread-4:4459790336] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-18 05:59:11,843 [Thread-5:4463996928] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-18 05:59:11,855 [Thread-6:4468203520] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-18 05:59:11,870 [Thread-7:4451377152] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-18 06:00:20,258 [Thread-27:4451377152] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article_api/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/renderers.py", line 690, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/renderers.py", line 630, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/renderers.py", line 553, in get_raw_data_form
+    content = renderer.render(serializer.data, accepted, context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 507, in data
+    ret = super(Serializer, self).data
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 243, in data
+    self._data = self.get_initial()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 386, in get_initial
+    for field in self.fields.values()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 339, in fields
+    for key, value in self.get_fields().items():
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 965, in get_fields
+    field_name, info, model, depth
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 1102, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 1209, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `tittle` is not valid for model `Article`.
+2016-08-18 06:00:21,798 [Thread-28:4456755200] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article_api/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 164, in get_response
+    response = response.render()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 158, in render
+    self.content = self.rendered_content
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/renderers.py", line 690, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/renderers.py", line 630, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/renderers.py", line 553, in get_raw_data_form
+    content = renderer.render(serializer.data, accepted, context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 507, in data
+    ret = super(Serializer, self).data
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 243, in data
+    self._data = self.get_initial()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 386, in get_initial
+    for field in self.fields.values()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 339, in fields
+    for key, value in self.get_fields().items():
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 965, in get_fields
+    field_name, info, model, depth
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 1102, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/rest_framework/serializers.py", line 1209, in build_unknown_field
+    (field_name, model_class.__name__)
+ImproperlyConfigured: Field name `tittle` is not valid for model `Article`.
+2016-08-18 06:05:30,963 [Thread-27:4382474240] [django.request:170] [base:get_response] [WARNING]- Not Found: /group
+2016-08-22 15:00:24,505 [Thread-7:4405002240] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-22 15:00:24,518 [Thread-8:4409208832] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-22 15:00:24,548 [Thread-9:4405002240] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-22 15:00:24,566 [Thread-10:4405002240] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-22 15:00:24,584 [Thread-11:4409208832] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-22 15:00:25,090 [Thread-25:4405002240] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-08-22 15:00:30,462 [Thread-27:4409208832] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /caoliu/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/photo/views.py", line 7, in caoliu
+    return render(request,'caoliu.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: caoliu.html
+2016-08-22 15:02:14,026 [Thread-3:4472041472] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-22 15:02:14,029 [Thread-4:4476248064] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-22 15:02:14,066 [Thread-5:4480454656] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-22 15:02:14,090 [Thread-6:4484661248] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-22 15:02:14,107 [Thread-7:4488867840] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-22 15:02:21,520 [Thread-8:4468097024] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /caoliu/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/photo/views.py", line 7, in caoliu
+    return render(request,'caoliu.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: caoliu.html
+2016-08-22 15:04:33,511 [Thread-3:4539797504] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-22 15:04:33,513 [Thread-4:4544004096] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-22 15:04:33,542 [Thread-5:4548210688] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-22 15:04:33,557 [Thread-6:4552417280] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-22 15:04:33,569 [Thread-7:4556623872] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-22 15:06:00,846 [Thread-21:4535590912] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /caoliu/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/photo/views.py", line 7, in caoliu
+    return render(request,'caoliu.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'end', expected 'empty' \u6216 'endfor'
+2016-08-22 15:39:58,509 [Thread-3:4531322880] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-22 15:39:58,520 [Thread-4:4535529472] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-22 15:39:58,535 [Thread-5:4539736064] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-22 15:39:58,549 [Thread-6:4543942656] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-22 15:39:58,562 [Thread-7:4548149248] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-22 15:45:57,463 [Thread-41:4531585024] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-22 15:45:57,472 [Thread-42:4535791616] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-22 15:45:57,485 [Thread-43:4527378432] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-22 15:45:57,495 [Thread-44:4527378432] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-22 15:45:57,510 [Thread-45:4527378432] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-23 14:35:03,765 [Thread-4:4419911680] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-23 14:35:03,766 [Thread-5:4426223616] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-23 14:35:03,796 [Thread-6:4419911680] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-23 14:35:03,807 [Thread-7:4419911680] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-23 14:35:03,818 [Thread-8:4426223616] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-23 14:35:04,340 [Thread-19:4419911680] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-08-23 15:50:49,478 [Thread-2:4424867840] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /caoliu/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/doudou/Documents/python/blog/blogproject/urls.py", line 23, in <module>
+    from photo.views import caoliu
+  File "/Users/doudou/Documents/python/blog/photo/views.py", line 16
+    
+   ^
+IndentationError: expected an indented block
+2016-08-23 15:52:14,416 [Thread-3:4424867840] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /caoliu/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/doudou/Documents/python/blog/blogproject/urls.py", line 23, in <module>
+    from photo.views import caoliu
+  File "/Users/doudou/Documents/python/blog/photo/views.py", line 16
+    
+   ^
+IndentationError: expected an indented block
+2016-08-23 15:52:17,101 [Thread-4:4424867840] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /caoliu/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/doudou/Documents/python/blog/blogproject/urls.py", line 23, in <module>
+    from photo.views import caoliu
+  File "/Users/doudou/Documents/python/blog/photo/views.py", line 16
+    
+   ^
+IndentationError: expected an indented block
+2016-08-23 16:08:22,935 [Thread-20:4346335232] [django.request:170] [base:get_response] [WARNING]- Not Found: /list&title=每次和老婆做愛前都要動用這麽多道具才准操[13P]
+2016-08-23 16:08:58,053 [Thread-21:4346335232] [django.request:170] [base:get_response] [WARNING]- Not Found: /list&title=每次和老婆做愛前都要動用這麽多道具才准操[13P]
+2016-08-23 16:09:09,297 [Thread-27:4346335232] [django.request:170] [base:get_response] [WARNING]- Not Found: /list&title=快要结婚的炮友熟女之肥臀草起来杠杠的[15P]
+2016-08-23 16:11:09,244 [Thread-35:4346335232] [django.request:170] [base:get_response] [WARNING]- Not Found: /add&a=1,b=2
+2016-08-23 16:12:28,919 [Thread-44:4357115904] [django.request:170] [base:get_response] [WARNING]- Not Found: /list&title=[原创自拍]已婚少妇第二贴，捆绑，口塞，项圈，乳夹，SM情趣，你想要的都给你[18P]
+2016-08-23 16:21:45,095 [Thread-2:4552019968] [django.request:170] [base:get_response] [WARNING]- Not Found: /list&title=[原创自拍]已婚少妇第二贴，捆绑，口塞，项圈，乳夹，SM情趣，你想要的都给你[18P]
+2016-08-23 16:21:52,055 [Thread-11:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:22:20,012 [Thread-14:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:22:27,358 [Thread-17:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:22:33,213 [Thread-20:4575158272] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:22:37,773 [Thread-23:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:23:35,052 [Thread-33:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:23:45,152 [Thread-36:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:23:50,206 [Thread-42:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:23:59,355 [Thread-49:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:24:03,721 [Thread-55:4575158272] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:24:41,949 [Thread-61:4575158272] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:25:13,552 [Thread-67:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:26:30,146 [Thread-73:4575158272] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:26:40,695 [Thread-79:4575158272] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:28:40,708 [Thread-85:4575158272] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:28:51,230 [Thread-87:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-23 16:28:51,243 [Thread-88:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-23 16:28:51,258 [Thread-89:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-23 16:28:51,273 [Thread-90:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-23 16:28:51,277 [Thread-91:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-23 16:29:47,538 [Thread-100:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /index.html
+2016-08-23 16:30:24,467 [Thread-101:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /index.html
+2016-08-23 16:30:32,141 [Thread-103:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-23 16:30:32,160 [Thread-107:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-23 16:30:32,162 [Thread-105:4575158272] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-23 16:30:32,164 [Thread-104:4570951680] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-23 16:30:32,166 [Thread-106:4579364864] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-23 16:30:43,538 [Thread-111:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-23 16:30:43,559 [Thread-112:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-23 16:30:43,576 [Thread-114:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-23 16:30:43,579 [Thread-115:4570951680] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-23 16:30:43,604 [Thread-113:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-23 16:30:50,125 [Thread-120:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:31:03,537 [Thread-121:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/p.html
+2016-08-23 16:32:31,849 [Thread-123:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-23 16:32:31,876 [Thread-128:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-23 16:32:31,890 [Thread-129:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-23 16:32:31,903 [Thread-130:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-23 16:32:31,917 [Thread-131:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-23 16:32:31,934 [Thread-132:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-23 16:32:31,955 [Thread-133:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-23 16:32:31,968 [Thread-135:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-23 16:32:31,973 [Thread-134:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-23 16:32:31,994 [Thread-136:4570951680] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-23 16:32:33,445 [Thread-138:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-23 16:32:33,460 [Thread-139:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-23 16:32:33,479 [Thread-141:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-23 16:32:33,480 [Thread-140:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-23 16:32:33,483 [Thread-142:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-23 16:32:36,083 [Thread-146:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-23 16:32:36,101 [Thread-147:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-23 16:32:36,117 [Thread-148:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-23 16:32:36,119 [Thread-149:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-23 16:32:36,135 [Thread-150:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-23 16:32:41,101 [Thread-152:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-23 16:32:41,118 [Thread-153:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-23 16:32:41,134 [Thread-155:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-23 16:32:41,136 [Thread-154:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-23 16:32:41,150 [Thread-156:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-23 16:32:53,982 [Thread-161:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:33:17,915 [Thread-166:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:33:32,169 [Thread-168:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-23 16:33:32,184 [Thread-169:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-23 16:33:32,197 [Thread-170:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-23 16:33:32,212 [Thread-172:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-23 16:33:32,215 [Thread-171:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-23 16:33:53,270 [Thread-176:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:34:24,290 [Thread-180:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:37:11,300 [Thread-182:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-08-23 16:37:11,315 [Thread-183:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-08-23 16:37:11,332 [Thread-184:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-08-23 16:37:11,345 [Thread-185:4562538496] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-08-23 16:37:11,352 [Thread-186:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-08-23 16:37:20,032 [Thread-191:4552282112] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:37:43,464 [Thread-194:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 16:39:41,233 [Thread-10:4584525824] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 17:12:15,701 [Thread-16:4488830976] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js

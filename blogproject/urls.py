@@ -15,11 +15,29 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from rest_framework import routers
+from quickstart.views import UserViewSet,GroupViewSet,ArticleViewSet
 from blog.views import index
-from blog.views import love
+from blog.views import love,test1 as blogtest,article
+from .views import test1,add,add2
+from photo.views import caoliu,list
+router = routers.DefaultRouter()
+router.register(r'users', UserViewSet)
+router.register(r'groups', GroupViewSet)
+router.register(r'article_api',ArticleViewSet)
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', index,name='index'),
     url(r'^love/', love,name='love'),
+    url(r'^test/', test1,name='test'),
+    url(r'^add/$', add, name='add'),
+    url(r'^add/(\d+)/(\d+)/$', add2, name='add2'),
+    url(r'^article/$',article,name='article'),
+    url(r'^test3/$', blogtest, name='test2'),
+    url(r'^', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^caoliu/', caoliu, name='caoliu'),
+    url(r'^list/$', list, name='list'),
+
 ]

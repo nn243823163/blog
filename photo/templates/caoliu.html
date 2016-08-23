@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{#直接返回图片#}
+{#{% for photo in link %}#}
+{#<div style=" width: 864px;height: 486px">#}
+{#    <img style="width: 864px;height: 486px" src="{{ photo }}" alt="">#}
+{#</div><br><br><br>#}
+{#{% endfor %}#}
+
+{#返回标题    #}
+{% for title in titles %}
+    <a href="/list?title={{ title }}"><h3>{{ title }}</h3><br></a>
+{% endfor %}
+
+{% endblock %}

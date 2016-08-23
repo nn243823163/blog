@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/Users/doudou/Documents/python/blog/venv/bin/python2.7
 import os
 import sys
 
