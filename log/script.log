@@ -1056,3 +1056,4 @@ IndentationError: expected an indented block
 2016-08-23 16:37:43,464 [Thread-194:4566745088] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
 2016-08-23 16:39:41,233 [Thread-10:4584525824] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
 2016-08-23 17:12:15,701 [Thread-16:4488830976] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-08-23 17:26:02,849 [Thread-27:4488830976] [django.request:170] [base:get_response] [WARNING]- Not Found: /list/js/nav.js

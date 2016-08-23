@@ -3527,3 +3527,11 @@
 2016-08-23 17:12:15,643 [Thread-15:4488830976] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
 2016-08-23 17:12:15,662 [Thread-15:4488830976] [django.db.backends:89] [utils:execute] [DEBUG]- (0.018) SELECT `photo`.`link` FROM `photo` WHERE `photo`.`title` = '老外粗壮的阴茎[14P]'; args=(u'\u8001\u5916\u7c97\u58ee\u7684\u9634\u830e[14P]',)
 2016-08-23 17:12:15,679 [Thread-15:4488830976] [django.db.backends:89] [utils:execute] [DEBUG]- (0.017) SELECT `photo`.`url` FROM `photo` WHERE `photo`.`title` = '老外粗壮的阴茎[14P]'; args=(u'\u8001\u5916\u7c97\u58ee\u7684\u9634\u830e[14P]',)
+2016-08-23 17:25:58,959 [Thread-23:4488830976] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-23 17:25:58,983 [Thread-23:4488830976] [django.db.backends:89] [utils:execute] [DEBUG]- (0.023) SELECT DISTINCT `photo`.`title` FROM `photo` LIMIT 200; args=()
+2016-08-23 17:25:59,035 [Thread-24:4488830976] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-23 17:25:59,050 [Thread-24:4488830976] [django.db.backends:89] [utils:execute] [DEBUG]- (0.015) SELECT DISTINCT `photo`.`title` FROM `photo` LIMIT 200; args=()
+2016-08-23 17:26:02,777 [Thread-26:4488830976] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-23 17:26:02,779 [Thread-26:4488830976] [django.db.backends:89] [utils:execute] [DEBUG]- (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-23 17:26:02,806 [Thread-26:4488830976] [django.db.backends:89] [utils:execute] [DEBUG]- (0.026) SELECT `photo`.`link` FROM `photo` WHERE `photo`.`title` = '城中村大战熟女技师,感觉被她干了[17P]'; args=(u'\u57ce\u4e2d\u6751\u5927\u6218\u719f\u5973\u6280\u5e08,\u611f\u89c9\u88ab\u5979\u5e72\u4e86[17P]',)
+2016-08-23 17:26:02,824 [Thread-26:4488830976] [django.db.backends:89] [utils:execute] [DEBUG]- (0.017) SELECT `photo`.`url` FROM `photo` WHERE `photo`.`title` = '城中村大战熟女技师,感觉被她干了[17P]'; args=(u'\u57ce\u4e2d\u6751\u5927\u6218\u719f\u5973\u6280\u5e08,\u611f\u89c9\u88ab\u5979\u5e72\u4e86[17P]',)
