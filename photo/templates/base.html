@@ -6,6 +6,8 @@
 <title>某某某的个人博客</title>
 <meta name="keywords" content="{{ SITE_NAME }}" />
 <meta name="description" content="{{ SITE_DESC }}" />
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+
 <!--<link href="{% static 'css/base.css' %}" rel="stylesheet">-->
 <link href="{{ STATIC_URL }}css/base.css" rel="stylesheet">
 <link href="{% static 'css/index.css' %}" rel="stylesheet">
@@ -24,7 +26,7 @@
   </div>
   <nav id="topnav" class="f_r">
     <ul>
-      <a href="/" target="_self">首页</a> <a href="news.html" target="_blank">关于我</a> <a href="/caoliu" target="_self">福利</a>
+      <a href="/" target="_self">首页</a>  <a href="/caoliu" target="_self">福利</a> <a href="{% url 'love' %}" target="_blank">关于我</a>
     </ul>
     <script src="js/nav.js"></script>
   </nav>
@@ -35,14 +37,18 @@
     <!-- banner代码 结束 -->
       {% block content %}
       {% endblock %}
+{##}
 
-  </div>
-
+  {% block page_inator %}
+  {% endblock %}
   <!--r_box end -->
 </article>
 <footer>
   <p class="ft-copyright">某某某的个人博客 蜀ICP备xxxxxxx号-1</p>
   <div id="tbox"> <a id="togbook" href="/"></a> <a id="gotop" href="#a_top"></a> </div>
 </footer>
+    {% block scripts %}
+    {% endblock %}
+
 </body>
 </html>

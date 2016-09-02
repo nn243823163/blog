@@ -1,14 +1,36 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<span>
 <div style="font-size: 30px;"><h5>{{ get_title }}</h5></div><br>
-<div style="font-size: 20px;"><a href="{{ get_url }}">原帖地址</a></div><br><br>
-
+<div style="font-size: 20px;">
+    <a href="{{ get_url }}">原帖地址</a>
+</div><br><br>
+</span>
 {% for photo in get_links %}
-<div style=" width: 864px;height: 486px">
-    <img style="width: 864px;height: 486px" src="{{ photo }}" alt="">
+<div style=" height: 700px;">
+    <img style="height: 700px;" src="{{ photo }}" alt="">
 </div><br><br><br>
 {% endfor %}
+<span>
+    <div style=" color:black;font-size: 30px;position:fixed; bottom: 500px; right: 100px;" >
+        <p id="bigphoto">大图</p><p id="smallphoto">小图</p>
+    </div>
+</span>
+{% endblock %}
 
+{% block scripts %}
+    <script>
+        $(document).ready(function () {
+            $("#bigphoto").click(function () {
+                $("body > article > div > div").css('height','100%')
+                $("body > article > div > div > img").css('height','100%')
+           })
+            $("#smallphoto").click(function () {
+                $("body > article > div > div").css('height','700px')
+                $("body > article > div > div > img").css('height','700px')
+
+           })
+        })
+    </script>
 {% endblock %}

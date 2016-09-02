@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from django.contrib.auth.models import User, Group
+from django.contrib.auth.models import Group
 from rest_framework import viewsets
 from quickstart.serializers import UserSerializer, GroupSerializer,ArticleSerializer
-from .models import Article
+from blog.models import Article , User
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()

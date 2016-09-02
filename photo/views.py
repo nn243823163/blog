@@ -1,6 +1,7 @@
 #coding:utf-8
 from django.shortcuts import render
 from .models import Photo
+from django.core.paginator import Paginator,InvalidPage,EmptyPage,PageNotAnInteger
 # Create your views here.
 
 def caoliu(request):
@@ -15,11 +16,27 @@ def caoliu(request):
     # return render(request,'caoliu.html',locals())
 
     #####返回标题########
-    photo_titles = Photo.objects.values('title').distinct()[0:200]
+    photo_titles = Photo.objects.values('title').distinct()
+    paginator = Paginator(photo_titles , 50)
+
+    try:
+        page = int(request.GET.get('page',1))
+        photo_titles = paginator.page(page)
+    except (InvalidPage,EmptyPage,PageNotAnInteger):
+        photo_titles = paginator.page(1)
     titles = []
     for photo_title in photo_titles:
         photo_title = photo_title['title']
         titles.append(photo_title)
+
+    # photos =    Photo.objects.all()
+    # paginator = Paginator(photos,50)
+    # try:
+    #     page = int(request.GET.get('page',1))
+    #     photos = paginator.page(page)
+    # except (InvalidPage,EmptyPage,PageNotAnInteger):
+    #     photos = paginator.page(1)
+
     return render(request, 'caoliu.html', locals())
 
 def list(request):

@@ -21,10 +21,15 @@ from blog.views import index
 from blog.views import love,test1 as blogtest,article
 from .views import test1,add,add2
 from photo.views import caoliu,list
+from django.conf import settings
+from testapp.views import test_upload
+
+
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'groups', GroupViewSet)
 router.register(r'article_api',ArticleViewSet)
+from django.views.static import serve
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
@@ -35,9 +40,11 @@ urlpatterns = [
     url(r'^add/(\d+)/(\d+)/$', add2, name='add2'),
     url(r'^article/$',article,name='article'),
     url(r'^test3/$', blogtest, name='test2'),
-    url(r'^', include(router.urls)),
+    url(r'', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^caoliu/', caoliu, name='caoliu'),
+    url(r'^caoliu', caoliu, name='caoliu'),
     url(r'^list/$', list, name='list'),
+    url(r"^uploads/(?P<path>.*)$", serve, {"document_root": settings.MEDIA_ROOT,}),
+    url(r'^testapp/', include('testapp.urls')),
 
 ]

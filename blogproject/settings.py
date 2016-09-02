@@ -41,7 +41,8 @@ INSTALLED_APPS = (
     'rest_framework',
     'blog',
     'quickstart',
-    'photo'
+    'photo',
+    'testapp',
 )
 
 REST_FRAMEWORK = {
@@ -53,7 +54,7 @@ REST_FRAMEWORK = {
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -128,6 +129,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+MEDIA_URL = '/uploads/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+
+# 自定义用户model
+AUTH_USER_MODEL = 'blog.User'
 
 #网站基本配置信息
 SITE_NAME = '南男的个人博客'

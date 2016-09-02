@@ -1,17 +1,39 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
 {#直接返回图片#}
 {#{% for photo in link %}#}
 {#<div style=" width: 864px;height: 486px">#}
 {#    <img style="width: 864px;height: 486px" src="{{ photo }}" alt="">#}
 {#</div><br><br><br>#}
 {#{% endfor %}#}
-
 {#返回标题    #}
-{% for title in titles %}
-    <a href="/list?title={{ title }}"><h3>{{ title }}</h3><br></a>
+{% for value in titles %}
+    <a href="/list?title={{ value }}"><h3>{{ value }}</h3></a><br>
 {% endfor %}
+{% endblock %}
 
+{% block page_inator %}
+  </div>
+    <br><br>
+    <div style=" position:fixed; bottom: 500px; right: 200px; " id="pagination">
+    <ul style="margin-left: 18px" id="pagination-flickr">
+        {% if page == 1 %}
+            <li class="previous-off"><a href="{% url 'caoliu' %}?page=1">&laquo;上一页</a></li>
+        {% else %}
+            <li class="previous-off"><a href="{% url 'caoliu' %}?page={{ photo_titles.previous_page_number }}">&laquo;上一页</a></li>
+        {% endif %}
+        <li class="active">当前第{{ page }}页</li>
+        {% if page == photo_titles.paginator.num_pages %}
+            <li class="next-off"><a href="{% url 'caoliu' %}?page=photo_titles.paginator.num_pages">&laquo;下一页</a></li> <br>
+        {% else %}
+            <li class="next-off"><a href="{% url 'caoliu' %}?page={{ photo_titles.next_page_number }}">&laquo;下一页</a></li><br>
+        {% endif %}
+    </ul><br>
+    <form action="{% url 'caoliu' %}" method="get">
+    跳转至第: <input type="text" name="page">页
+    <input type="submit" value="提交">
+    </form>
+    <h4 style="color: #c0a16b;font-size: 15px;margin-left: 80px;margin-top: 10px";>{%if photo_titles.paginator.num_pages%}共 {{ photo_titles.paginator.num_pages }} 页{%endif%}</h4>
+   </div>
 {% endblock %}
