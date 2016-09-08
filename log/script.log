@@ -2396,3 +2396,200 @@ TemplateDoesNotExist: register.html
 2016-09-02 05:45:51,109 [Thread-178:4593991680] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
 2016-09-02 05:45:51,122 [Thread-180:4602929152] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
 2016-09-02 05:45:51,125 [Thread-179:4598460416] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-09-02 12:07:00,447 [Thread-182:4585578496] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-05 14:30:32,087 [Thread-7:4434894848] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-05 14:30:32,102 [Thread-8:4430688256] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-09-05 14:30:32,122 [Thread-9:4430688256] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-09-05 14:30:32,160 [Thread-11:4434894848] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-09-05 14:30:32,166 [Thread-10:4430688256] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-09-05 14:30:32,765 [Thread-25:4430688256] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-09-05 14:30:51,265 [Thread-26:4430688256] [django.request:152] [base:get_response] [WARNING]- Not Found: /api-auth
+2016-09-05 14:38:34,579 [Thread-3:4407107584] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /list/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/photo/views.py", line 43, in list
+    get_title = request.GET['title']
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'title'"
+2016-09-05 14:39:32,759 [Thread-3:4524150784] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-05 14:39:34,579 [Thread-6:4524150784] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-05 14:53:20,018 [Thread-10:4537032704] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-05 14:53:23,125 [Thread-15:4524150784] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-05 14:53:47,935 [Thread-18:4532826112] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-05 14:53:56,751 [Thread-21:4532826112] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-05 14:54:01,637 [Thread-24:4524150784] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 02:45:07,312 [Thread-3:4351045632] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 02:45:07,336 [Thread-4:4355252224] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-09-06 02:45:07,369 [Thread-5:4346839040] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-09-06 02:45:07,402 [Thread-6:4346839040] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-09-06 02:45:07,437 [Thread-7:4346839040] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-09-06 02:45:08,280 [Thread-8:4346839040] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-09-06 02:45:27,871 [Thread-10:4346839040] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 02:45:32,969 [Thread-13:4346839040] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 02:45:38,373 [Thread-16:4355252224] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 02:46:41,030 [Thread-27:4346839040] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 02:46:57,121 [Thread-29:4346839040] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 02:47:10,495 [Thread-32:4346839040] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 02:47:28,298 [Thread-35:4355252224] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 02:47:49,721 [Thread-40:4355252224] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-09-06 02:47:49,723 [Thread-39:4351045632] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 02:47:49,730 [Thread-41:4359720960] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-09-06 02:47:49,732 [Thread-42:4346839040] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-09-06 02:47:49,735 [Thread-43:4364189696] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-09-06 02:47:49,756 [Thread-44:4355252224] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-09-06 02:49:53,191 [Thread-46:4346839040] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 02:50:01,144 [Thread-49:4346839040] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 02:50:19,302 [Thread-52:4355252224] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 02:52:57,565 [Thread-20:4486049792] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/upload/kindeditor
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+TypeError: uploadImg() got an unexpected keyword argument 'dir_name'
+2016-09-06 02:55:08,245 [Thread-2:4586450944] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/upload/kindeditor
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+TypeError: uploadImg() got an unexpected keyword argument 'dir_name'
+2016-09-06 02:57:51,660 [Thread-3:4586450944] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/upload/kindeditor
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+TypeError: uploadImg() got an unexpected keyword argument 'dir_name'
+2016-09-06 03:12:11,568 [Thread-23:4552216576] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:12:11,571 [Thread-24:4556996608] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-09-06 03:12:11,631 [Thread-25:4552216576] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-09-06 03:12:11,681 [Thread-26:4556996608] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-09-06 03:12:11,717 [Thread-27:4561203200] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-09-06 03:12:12,158 [Thread-41:4552216576] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-09-06 03:20:30,790 [Thread-2:4406439936] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /article/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 46, in article
+    return render(request,'blog/article.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/context.py", line 244, in bind_template
+    processors = (template.engine.template_context_processors +
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 91, in template_context_processors
+    return tuple(import_string(path) for path in context_processors)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 91, in <genexpr>
+    return tuple(import_string(path) for path in context_processors)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named context_processors
+2016-09-06 03:33:14,309 [Thread-20:4538613760] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-09-06 03:33:14,316 [Thread-21:4542820352] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-09-06 03:33:14,331 [Thread-19:4534407168] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:33:14,339 [Thread-23:4551233536] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-09-06 03:33:14,488 [Thread-22:4547026944] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-09-06 03:33:14,562 [Thread-24:4529414144] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a1.jpg
+2016-09-06 03:33:14,570 [Thread-25:4538613760] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-09-06 03:37:49,334 [Thread-33:4538613760] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-09-06 03:37:49,335 [Thread-35:4547026944] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-09-06 03:37:49,373 [Thread-34:4542820352] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-09-06 03:37:49,460 [Thread-27:4534407168] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:37:49,805 [Thread-38:4538613760] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a4.jpg
+2016-09-06 03:37:49,870 [Thread-37:4534407168] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a3.jpg
+2016-09-06 03:37:49,872 [Thread-36:4529414144] [django.request:152] [base:get_response] [WARNING]- Not Found: /images/a2.jpg
+2016-09-06 03:39:41,406 [Thread-57:4551233536] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:43:07,326 [Thread-80:4551233536] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:44:47,855 [Thread-99:4534407168] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:45:13,519 [Thread-126:4551233536] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:48:39,572 [Thread-149:4551233536] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:49:21,154 [Thread-170:4542820352] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:49:58,735 [Thread-191:4529414144] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:50:00,845 [Thread-194:4529414144] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:55:31,838 [Thread-199:4547026944] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:55:54,957 [Thread-222:4551233536] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:56:12,986 [Thread-245:4551233536] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:58:10,141 [Thread-268:4551233536] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 03:59:32,450 [Thread-16:4442009600] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 03:59:43,681 [Thread-19:4450684928] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 03:59:48,397 [Thread-22:4467511296] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 04:00:15,644 [Thread-25:4450684928] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 04:02:49,006 [Thread-58:4442009600] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 04:03:11,773 [Thread-74:4442009600] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 04:03:36,038 [Thread-83:4442009600] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 07:12:33,061 [Thread-14:4456951808] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 08:19:12,714 [Thread-39:4431450112] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 08:32:04,700 [Thread-93:4431450112] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 08:32:08,463 [Thread-99:4448800768] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 08:32:29,799 [Thread-108:4431450112] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 08:32:47,992 [Thread-110:4435656704] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 08:32:51,405 [Thread-116:4431450112] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 08:35:23,432 [Thread-123:4431450112] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-06 15:12:15,699 [Thread-8:4502147072] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-06 15:12:16,188 [Thread-13:4497940480] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-09-07 14:09:45,036 [Thread-3:4363104256] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-07 14:09:45,598 [Thread-8:4358897664] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-09-07 14:09:55,967 [Thread-10:4358897664] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-07 14:09:58,626 [Thread-12:4358897664] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-07 14:10:07,857 [Thread-15:4358897664] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-07 14:10:26,841 [Thread-18:4367310848] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-07 14:43:44,572 [Thread-7:4361367552] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-07 14:44:01,864 [Thread-26:4344279040] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-07 14:44:58,516 [Thread-35:4344279040] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-07 14:45:16,988 [Thread-38:4344279040] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-08 10:00:32,253 [Thread-7:4530589696] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-08 10:00:32,659 [Thread-25:4509556736] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-09-08 10:00:41,109 [Thread-27:4513763328] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-08 10:00:57,210 [Thread-33:4509556736] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-08 10:01:02,111 [Thread-36:4509556736] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-08 10:01:08,781 [Thread-39:4517969920] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-08 10:01:32,670 [Thread-44:4509556736] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-08 10:01:44,093 [Thread-46:4509556736] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-08 10:01:51,570 [Thread-49:4509556736] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-08 10:02:23,131 [Thread-52:4517969920] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-08 10:05:08,835 [Thread-61:4509556736] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-08 10:07:59,290 [Thread-77:4509556736] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js

@@ -1,3 +1,5 @@
+#coding:utf-8
+
 """blogproject URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -23,7 +25,7 @@ from .views import test1,add,add2
 from photo.views import caoliu,list
 from django.conf import settings
 from testapp.views import test_upload
-
+from blog.upload import upload_image
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
@@ -34,17 +36,19 @@ from django.views.static import serve
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', index,name='index'),
-    url(r'^love/', love,name='love'),
+    url(r'^love/', love,name='love'), #表白墙
     url(r'^test/', test1,name='test'),
     url(r'^add/$', add, name='add'),
-    url(r'^add/(\d+)/(\d+)/$', add2, name='add2'),
+    url(r'^add/(\d+)/(\d+)/$', add2, name='add2'), #测试url传参
     url(r'^article/$',article,name='article'),
     url(r'^test3/$', blogtest, name='test2'),
-    url(r'', include(router.urls)),
+    url(r'', include(router.urls)), #restframework接口
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^caoliu', caoliu, name='caoliu'),
+    url(r'^caoliu', caoliu, name='caoliu'), #草榴
     url(r'^list/$', list, name='list'),
-    url(r"^uploads/(?P<path>.*)$", serve, {"document_root": settings.MEDIA_ROOT,}),
-    url(r'^testapp/', include('testapp.urls')),
+    url(r"^uploads/(?P<path>.*)$", serve, {"document_root": settings.MEDIA_ROOT,}), #上传功能
+    url(r'^testapp/', include('testapp.urls')),  #测试功能
+    url(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image, name='upload_image'), #富文本编辑器图片上传
+
 
 ]

@@ -21,6 +21,7 @@ def index(request):
     #     file = open('sss.txt','r')
     # except Exception as e:
     #     logger.error(e)
+    articles_index = Article.objects.all()
     return render(request,'index.html',locals())
 
 def love(request):

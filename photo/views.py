@@ -17,6 +17,8 @@ def caoliu(request):
 
     #####返回标题########
     photo_titles = Photo.objects.values('title').distinct()
+
+    #分页器
     paginator = Paginator(photo_titles , 50)
 
     try:

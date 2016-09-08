@@ -1,7 +1,9 @@
+#coding:utf-8
 from django.contrib import admin
 from .models import *
 
 class ArticleAdmin(admin.ModelAdmin):
+    #引入富文本编辑器
     class Media:
         js = (
             '/static/js/kindeditor-4.1.9/kindeditor-min.js',
