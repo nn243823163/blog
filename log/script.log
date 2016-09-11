@@ -2593,3 +2593,274 @@ ImportError: No module named context_processors
 2016-09-08 10:02:23,131 [Thread-52:4517969920] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
 2016-09-08 10:05:08,835 [Thread-61:4509556736] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
 2016-09-08 10:07:59,290 [Thread-77:4509556736] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-09 07:00:08,011 [Thread-2:4444270592] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 25, in index
+    return render(request,'index.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    len_values = len(values)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1072, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.blog_article' doesn't exist")
+2016-09-09 07:00:08,779 [Thread-3:4448477184] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-09-09 07:00:28,989 [Thread-2:4523470848] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 25, in index
+    return render(request,'index.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    len_values = len(values)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1072, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.blog_article' doesn't exist")
+2016-09-09 07:01:38,119 [Thread-6:4523470848] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 25, in index
+    return render(request,'index.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    len_values = len(values)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1072, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.blog_article' doesn't exist")
+2016-09-09 07:01:51,954 [Thread-2:4487577600] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 25, in index
+    return render(request,'index.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    len_values = len(values)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1072, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.blog_article' doesn't exist")
+2016-09-11 15:26:23,534 [Thread-2:4584873984] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/blog/views.py", line 25, in index
+    return render(request,'index.html',locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    len_values = len(values)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1072, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.blog_article' doesn't exist")
+2016-09-11 15:26:24,302 [Thread-3:4584873984] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-09-11 15:26:30,848 [Thread-4:4584873984] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /jinmeng
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/jinmeng/views.py", line 6, in jinmeng
+    HK = HK_jiaoyisuo.objects.all[0:20]
+TypeError: 'instancemethod' object has no attribute '__getitem__'
+2016-09-11 15:43:11,468 [Thread-7:4467539968] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js

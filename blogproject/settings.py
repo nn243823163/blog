@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'quickstart',
     'photo',
     'testapp',
+    'jinmeng',
 )
 
 REST_FRAMEWORK = {
@@ -96,15 +97,41 @@ WSGI_APPLICATION = 'blogproject.wsgi.application'
 # }
 DATABASES = {
     'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'jinmeng',
+            'USER':'root',
+            'PASSWORD':'',
+            'HOST':'localhost',
+            'PORT':'',
+        },
+    'db1': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'caoliu_photo',
+        'NAME': 'jinmeng',
         'USER':'root',
         'PASSWORD':'',
         'HOST':'localhost',
         'PORT':'',
-    }
+    },
+    'db2': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'caoliu_photo',
+            'USER':'root',
+            'PASSWORD':'',
+            'HOST':'localhost',
+            'PORT':'',
+        },
 }
 
+DATABASE_ROUTERS = ['blogproject.database_router.DatabaseAppsRouter']
+DATABASE_APPS_MAPPING = {
+    # example:
+    #'app_name':'database_name',
+    'jinmeng': 'db1',
+    'photo': 'db2',
+    'blog':'db2',
+    'quickstart': 'db2',
+
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/

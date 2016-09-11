@@ -32,6 +32,7 @@ router.register(r'users', UserViewSet)
 router.register(r'groups', GroupViewSet)
 router.register(r'article_api',ArticleViewSet)
 from django.views.static import serve
+from jinmeng.views import jinmeng
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
@@ -49,6 +50,6 @@ urlpatterns = [
     url(r"^uploads/(?P<path>.*)$", serve, {"document_root": settings.MEDIA_ROOT,}), #上传功能
     url(r'^testapp/', include('testapp.urls')),  #测试功能
     url(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image, name='upload_image'), #富文本编辑器图片上传
-
+    url(r'^jinmeng', jinmeng, name='jinmeng'),  # 金盟
 
 ]
