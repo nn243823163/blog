@@ -2864,3 +2864,180 @@ Traceback (most recent call last):
     HK = HK_jiaoyisuo.objects.all[0:20]
 TypeError: 'instancemethod' object has no attribute '__getitem__'
 2016-09-11 15:43:11,468 [Thread-7:4467539968] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-11 15:46:45,405 [Thread-33:4454658048] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-11 15:46:48,672 [Thread-36:4454658048] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-11 15:46:55,709 [Thread-39:4463595520] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-11 15:47:06,645 [Thread-45:4463595520] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-11 16:08:35,754 [Thread-53:4463595520] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-11 16:08:40,613 [Thread-57:4454658048] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-11 16:09:06,072 [Thread-60:4463595520] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-11 16:09:20,734 [Thread-66:4463595520] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-12 02:45:26,495 [Thread-3:4545757184] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-12 02:45:27,406 [Thread-4:4549963776] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-09-12 03:00:41,134 [Thread-2:4492951552] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /jinmeng
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/jinmeng/views.py", line 10, in jinmeng
+    time_hk_html.append(i['time_hk'][15:])
+TypeError: 'datetime.time' object has no attribute '__getitem__'
+2016-09-12 03:04:30,573 [Thread-8:4542066688] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-12 03:04:32,654 [Thread-14:4546797568] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-12 03:06:44,131 [Thread-7:4568670208] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /jinmeng
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/jinmeng/views.py", line 10, in jinmeng
+    time_hk_html.append(i['time_hk'].hour())
+TypeError: 'int' object is not callable
+2016-09-12 03:12:31,628 [Thread-8:4462690304] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-12 03:24:45,092 [Thread-7:4450988032] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /jinmeng
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/jinmeng/views.py", line 10, in jinmeng
+    time_hk_html.append(i['time_hk'].time)
+AttributeError: 'datetime.time' object has no attribute 'time'
+2016-09-12 03:30:57,927 [Thread-7:4521533440] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /jinmeng
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/jinmeng/views.py", line 11, in jinmeng
+    time_hk_html.append(datetime.datetime.strptime(i['time_hk'],' %H:%M'))
+TypeError: must be string, not datetime.time
+2016-09-12 03:33:26,111 [Thread-7:4378529792] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /jinmeng
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/jinmeng/views.py", line 10, in jinmeng
+    time_hk_html.append(i['time_hk'].strptime(' %H:%M'))
+AttributeError: 'datetime.time' object has no attribute 'strptime'
+2016-09-12 03:36:46,254 [Thread-7:4573294592] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /jinmeng
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/jinmeng/views.py", line 16, in jinmeng
+    data1_html.append(i['data1'])
+KeyError: 'data1'
+2016-09-12 03:36:51,545 [Thread-7:4543979520] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /jinmeng
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/jinmeng/views.py", line 16, in jinmeng
+    data1_html.append(i['data1'])
+KeyError: 'data1'
+2016-09-12 04:56:39,364 [Thread-30:4594765824] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /jinmeng
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/jinmeng/views.py", line 23, in jinmeng
+    return render(request, 'jinmeng.html', locals())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: stringformat requires 2 arguments, 1 provided
+2016-09-12 05:30:38,681 [Thread-7:4588253184] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /jinmeng
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/jinmeng/views.py", line 6, in jinmeng
+    HK = HK_jiaoyisuo.objects.all().query.group_by('time_hk')
+TypeError: 'NoneType' object is not callable
+2016-09-12 05:31:11,802 [Thread-8:4588253184] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /jinmeng
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/jinmeng/views.py", line 6, in jinmeng
+    HK = HK_jiaoyisuo.objects.all().query.group_by('time_hk')
+TypeError: 'NoneType' object is not callable
+2016-09-12 05:31:20,943 [Thread-9:4588253184] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /jinmeng
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/jinmeng/views.py", line 6, in jinmeng
+    HK = HK_jiaoyisuo.objects.all().query.group_by('time_hk')
+TypeError: 'NoneType' object is not callable
+2016-09-12 09:53:49,676 [Thread-8:4419334144] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
