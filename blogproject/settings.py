@@ -248,3 +248,6 @@ LOGGING = {
         },
     }
 }
+
+#登录admin
+# AUTHENTICATION_BACKENDS = (('django.contrib.auth.backends.ModelBackend'))

@@ -41,7 +41,7 @@ urlpatterns = [
     url(r'^test/', test1,name='test'),
     url(r'^add/$', add, name='add'),
     url(r'^add/(\d+)/(\d+)/$', add2, name='add2'), #测试url传参
-    url(r'^article/$',article,name='article'),
+    url(r'^article/(\d+)/$',article,name='article'),
     url(r'^test3/$', blogtest, name='test2'),
     url(r'', include(router.urls)), #restframework接口
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),

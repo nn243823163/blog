@@ -72,19 +72,19 @@
     </div>
 
     <!-- banner代码 结束 -->
-
-    {% for article in articles_index %}
     <div class="topnews">
       <h2>最新文章</h2>
+    {% for article in articles_index %}
+
       <div class="blogs">
         <ul>
-          <h3><a href="/article/">{{ article.title }}</a></h3>
+          <h3><a href="/article/{{ article.id }}">{{ article.title }}</a></h3>
           <p>{{ article.desc }}</p>
           <p class="autor"><span class="lm f_l"><a href="/">个人博客</a></span><span class="dtime f_l">2014-02-19</span><span class="viewnum f_r">浏览（<a href="/">459</a>）</span><span class="pingl f_r">评论（<a href="/">30</a>）</span></p>
         </ul>
       </div>
+    {% endfor %}
     </div>
-  {% endfor %}
 
   <div id="pagination">
     <ul id="pagination-flickr">

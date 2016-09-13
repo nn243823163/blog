@@ -1,6 +1,57 @@
-{% extends 'base.html' %}
-{% block content %}
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>某某某的个人博客</title>
+<meta name="keywords" content="{{ SITE_NAME }}" />
+<meta name="description" content="{{ SITE_DESC }}" />
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+
+
+<!--<link href="{% static 'css/base.css' %}" rel="stylesheet">-->
+<link href="{{ STATIC_URL }}css/base.css" rel="stylesheet">
+<link href="{% static 'css/index.css' %}" rel="stylesheet">
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/sliders.js' %}"></script>
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+  <a id="a_top"></a>
+  <div class="logo">
+      <h1>{{ SITE_NAME }}</h1>
+      <p>{{ SITE_DESC }}</p>
+  </div>
+  <nav id="topnav" class="f_r">
+    <ul>
+      <a href="/" target="_self">首页</a>  <a href="/caoliu" target="_self">福利</a> <a href="{% url 'love' %}" target="_blank">关于我</a>
+    </ul>
+    <script src="js/nav.js"></script>
+  </nav>
+</header>
+<article>
+  <div class="l_box f_l">
+
+    <!-- banner代码 结束 -->
+      {% for article in article_html %}
+        <h1>{{ article.content|safe }}</h1><br>
+      {% endfor %}
+{##}
+
+  {% block page_inator %}
+  {% endblock %}
+  <!--r_box end -->
+</article>
+
+    {% block scripts %}
+    {% endblock %}
+
+</body>
+</html>
 
 
 
-{% endblock %}

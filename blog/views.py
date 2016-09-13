@@ -38,12 +38,13 @@ def test1(request):
     #     logger.error(e)
     return render(request,'blog/test1.html',locals())
 
-def article(request):
-    Article_query = Article.objects.values('content')
-    article_list = list()
-    for article_query in Article_query:
-        article_query = article_query['content']
-        article_list.append(article_query)
+def article(request,id):
+    # Article_query = Article.objects.values('content')
+    # article_list = list()
+    # for article_query in Article_query:
+    #     article_query = article_query['content']
+    #     article_list.append(article_query)
+    article_html = Article.objects.filter(id = id)
     return render(request,'blog/article.html',locals())
 
 

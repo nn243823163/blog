@@ -1,3 +1,4 @@
+#coding:utf-8
 from __future__ import unicode_literals
 from django.db import models
 import time
@@ -12,5 +13,7 @@ class HK_jiaoyisuo(models.Model):
     save_data = models.DateTimeField(default=time.time())
     class Meta:
         db_table = 'hk_jiaoyisuo'
+        verbose_name = '香港交易所'
+
     def __str__(self):
         return str(self.data2)

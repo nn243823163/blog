@@ -3041,3 +3041,1845 @@ Traceback (most recent call last):
     HK = HK_jiaoyisuo.objects.all().query.group_by('time_hk')
 TypeError: 'NoneType' object is not callable
 2016-09-12 09:53:49,676 [Thread-8:4419334144] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 06:44:00,600 [Thread-3:4428599296] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 06:44:01,171 [Thread-8:4424392704] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-09-13 06:44:25,049 [Thread-16:4424392704] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 06:44:45,030 [Thread-18:4424392704] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 06:48:24,066 [Thread-51:4424392704] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 380, in login
+    return LoginView.as_view(**defaults)(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/views.py", line 79, in dispatch
+    return super(LoginView, self).dispatch(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/edit.py", line 183, in post
+    return self.form_valid(form)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/views.py", line 101, in form_valid
+    auth_login(self.request, form.get_user())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 109, in login
+    request.session.cycle_key()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 314, in cycle_key
+    self.create()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 50, in create
+    self._session_key = self._get_new_session_key()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 46, in exists
+    return self.model.objects.filter(session_key=session_key).exists()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 664, in exists
+    return self.query.has_results(using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/query.py", line 496, in has_results
+    return compiler.has_results()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 813, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.django_session' doesn't exist")
+2016-09-13 06:55:23,315 [Thread-55:4442005504] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 06:55:28,555 [Thread-57:4454100992] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 11:33:26,800 [Thread-3:4510695424] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 11:33:27,226 [Thread-4:4514902016] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-09-13 11:33:40,549 [Thread-7:4510695424] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 380, in login
+    return LoginView.as_view(**defaults)(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/views.py", line 79, in dispatch
+    return super(LoginView, self).dispatch(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/edit.py", line 183, in post
+    return self.form_valid(form)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/views.py", line 101, in form_valid
+    auth_login(self.request, form.get_user())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 109, in login
+    request.session.cycle_key()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 314, in cycle_key
+    self.create()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 50, in create
+    self._session_key = self._get_new_session_key()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 46, in exists
+    return self.model.objects.filter(session_key=session_key).exists()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 664, in exists
+    return self.query.has_results(using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/query.py", line 496, in has_results
+    return compiler.has_results()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 813, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.django_session' doesn't exist")
+2016-09-13 11:34:36,649 [Thread-11:4509720576] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 380, in login
+    return LoginView.as_view(**defaults)(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/views.py", line 79, in dispatch
+    return super(LoginView, self).dispatch(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/edit.py", line 183, in post
+    return self.form_valid(form)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/views.py", line 101, in form_valid
+    auth_login(self.request, form.get_user())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 109, in login
+    request.session.cycle_key()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 314, in cycle_key
+    self.create()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 50, in create
+    self._session_key = self._get_new_session_key()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 46, in exists
+    return self.model.objects.filter(session_key=session_key).exists()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 664, in exists
+    return self.query.has_results(using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/query.py", line 496, in has_results
+    return compiler.has_results()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 813, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.django_session' doesn't exist")
+2016-09-13 11:37:21,209 [Thread-33:4509720576] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 11:37:32,480 [Thread-35:4513927168] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 11:37:35,577 [Thread-42:4509720576] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-13 11:37:43,010 [Thread-45:4518133760] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-13 11:38:17,324 [Thread-57:4509720576] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-13 11:38:39,838 [Thread-60:4518133760] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-13 11:39:09,679 [Thread-71:4509720576] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 11:39:30,290 [Thread-80:4518133760] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 380, in login
+    return LoginView.as_view(**defaults)(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/views.py", line 79, in dispatch
+    return super(LoginView, self).dispatch(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/edit.py", line 183, in post
+    return self.form_valid(form)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/views.py", line 101, in form_valid
+    auth_login(self.request, form.get_user())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 109, in login
+    request.session.cycle_key()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 314, in cycle_key
+    self.create()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 50, in create
+    self._session_key = self._get_new_session_key()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 46, in exists
+    return self.model.objects.filter(session_key=session_key).exists()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 664, in exists
+    return self.query.has_results(using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/query.py", line 496, in has_results
+    return compiler.has_results()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 813, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.django_session' doesn't exist")
+2016-09-13 11:48:57,464 [Thread-88:4514750464] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 11:48:57,820 [Thread-106:4510543872] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-09-13 11:49:09,011 [Thread-114:4510543872] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 380, in login
+    return LoginView.as_view(**defaults)(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/views.py", line 79, in dispatch
+    return super(LoginView, self).dispatch(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/generic/edit.py", line 183, in post
+    return self.form_valid(form)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/views.py", line 101, in form_valid
+    auth_login(self.request, form.get_user())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 109, in login
+    request.session.cycle_key()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 314, in cycle_key
+    self.create()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 50, in create
+    self._session_key = self._get_new_session_key()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 46, in exists
+    return self.model.objects.filter(session_key=session_key).exists()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 664, in exists
+    return self.query.has_results(using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/query.py", line 496, in has_results
+    return compiler.has_results()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 813, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.django_session' doesn't exist")
+2016-09-13 11:56:08,152 [Thread-134:4515385344] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 316, in render
+    return nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    len_values = len(values)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1072, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.django_admin_log' doesn't exist")
+2016-09-13 11:56:51,787 [Thread-142:4515385344] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 316, in render
+    return nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    len_values = len(values)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1072, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.django_admin_log' doesn't exist")
+2016-09-13 11:56:57,485 [Thread-143:4523577344] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 316, in render
+    return nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    len_values = len(values)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1072, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.django_admin_log' doesn't exist")
+2016-09-13 12:06:02,553 [Thread-149:4515385344] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 316, in render
+    return nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    len_values = len(values)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1072, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.blog_user' doesn't exist")
+2016-09-13 12:06:05,299 [Thread-150:4523577344] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 316, in render
+    return nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    len_values = len(values)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1072, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.blog_user' doesn't exist")
+2016-09-13 12:08:30,787 [Thread-2:4531605504] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 316, in render
+    return nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    len_values = len(values)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1072, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.blog_user' doesn't exist")
+2016-09-13 12:09:44,361 [Thread-6:4531605504] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 316, in render
+    return nodelist.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    len_values = len(values)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1072, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.blog_user' doesn't exist")
+2016-09-13 12:19:10,778 [Thread-34:4399980544] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/1/change/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1512, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1456, in changeform_view
+    self.log_change(request, new_object, change_message)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 737, in log_change
+    change_message=message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/models.py", line 32, in log_action
+    change_message=change_message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 803, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 831, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 915, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 954, in _do_insert
+    using=using, raw=raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1030, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1364, "Field 'id' doesn't have a default value")
+2016-09-13 12:21:22,461 [Thread-36:4413124608] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/1/change/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1512, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1456, in changeform_view
+    self.log_change(request, new_object, change_message)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 737, in log_change
+    change_message=message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/models.py", line 32, in log_action
+    change_message=change_message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 803, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 831, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 915, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 954, in _do_insert
+    using=using, raw=raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1030, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1364, "Field 'id' doesn't have a default value")
+2016-09-13 12:24:15,260 [Thread-46:4413124608] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/1/change/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1512, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1456, in changeform_view
+    self.log_change(request, new_object, change_message)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 737, in log_change
+    change_message=message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/models.py", line 32, in log_action
+    change_message=change_message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 803, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 831, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 915, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 954, in _do_insert
+    using=using, raw=raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1030, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1364, "Field 'id' doesn't have a default value")
+2016-09-13 12:25:20,270 [Thread-65:4413124608] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/tag/add/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 721, in log_addition
+    change_message=message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/models.py", line 32, in log_action
+    change_message=change_message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 803, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 831, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 915, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 954, in _do_insert
+    using=using, raw=raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1030, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1364, "Field 'id' doesn't have a default value")
+2016-09-13 12:28:26,370 [Thread-73:4413124608] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1509, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1453, in changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 721, in log_addition
+    change_message=message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/models.py", line 32, in log_action
+    change_message=change_message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 803, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 831, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 915, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 954, in _do_insert
+    using=using, raw=raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1030, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1364, "Field 'id' doesn't have a default value")
+2016-09-13 12:28:59,406 [Thread-84:4413124608] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/2/delete/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1718, in delete_view
+    self.log_deletion(request, obj, obj_display)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 753, in log_deletion
+    action_flag=DELETION,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/models.py", line 32, in log_action
+    change_message=change_message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 803, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 831, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 915, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 954, in _do_insert
+    using=using, raw=raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1030, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1364, "Field 'id' doesn't have a default value")
+2016-09-13 12:29:41,018 [Thread-136:4413124608] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/2/delete/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1718, in delete_view
+    self.log_deletion(request, obj, obj_display)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 753, in log_deletion
+    action_flag=DELETION,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/models.py", line 32, in log_action
+    change_message=change_message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 803, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 831, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 915, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 954, in _do_insert
+    using=using, raw=raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1030, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1364, "Field 'id' doesn't have a default value")
+2016-09-13 12:29:46,619 [Thread-137:4413124608] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/2/delete/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1718, in delete_view
+    self.log_deletion(request, obj, obj_display)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 753, in log_deletion
+    action_flag=DELETION,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/models.py", line 32, in log_action
+    change_message=change_message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 803, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 831, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 915, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 954, in _do_insert
+    using=using, raw=raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1030, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1364, "Field 'id' doesn't have a default value")
+2016-09-13 12:30:18,733 [Thread-205:4413124608] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/tag/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1585, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1305, in response_action
+    response = func(self, request, queryset)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/actions.py", line 48, in delete_selected
+    modeladmin.log_deletion(request, obj, obj_display)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 753, in log_deletion
+    action_flag=DELETION,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/models.py", line 32, in log_action
+    change_message=change_message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 803, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 831, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 915, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 954, in _do_insert
+    using=using, raw=raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1030, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1364, "Field 'id' doesn't have a default value")
+2016-09-13 12:31:23,393 [Thread-252:4413124608] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/1/change/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1512, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1456, in changeform_view
+    self.log_change(request, new_object, change_message)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 737, in log_change
+    change_message=message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/models.py", line 32, in log_action
+    change_message=change_message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 803, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 831, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 915, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 954, in _do_insert
+    using=using, raw=raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1030, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1364, "Field 'id' doesn't have a default value")
+2016-09-13 12:36:25,592 [Thread-5:4409282560] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/1/change/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1512, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/decorators.py", line 185, in inner
+    return func(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1456, in changeform_view
+    self.log_change(request, new_object, change_message)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 737, in log_change
+    change_message=message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/models.py", line 32, in log_action
+    change_message=change_message,
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 803, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 831, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 915, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/base.py", line 954, in _do_insert
+    using=using, raw=raw)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1030, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1364, "Field 'id' doesn't have a default value")
+2016-09-13 12:55:26,746 [Thread-2:4380229632] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 364, in login
+    self.each_context(request),
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 284, in each_context
+    'available_apps': self.get_app_list(request),
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 454, in get_app_list
+    app_dict = self._build_app_dict(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 400, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 476, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/models.py", line 439, in has_module_perms
+    return _user_has_module_perms(self, module)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/models.py", line 199, in _user_has_module_perms
+    for backend in auth.get_backends():
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 38, in get_backends
+    return _get_backends(return_tuples=False)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 27, in _get_backends
+    backend = load_backend(backend_path)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 21, in load_backend
+    return import_string(path)()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/module_loading.py", line 18, in import_string
+    six.reraise(ImportError, ImportError(msg), sys.exc_info()[2])
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/module_loading.py", line 15, in import_string
+    module_path, class_name = dotted_path.rsplit('.', 1)
+ImportError: d doesn't look like a module path
+2016-09-13 12:55:38,128 [Thread-10:4384436224] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 364, in login
+    self.each_context(request),
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 284, in each_context
+    'available_apps': self.get_app_list(request),
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 454, in get_app_list
+    app_dict = self._build_app_dict(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 400, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/options.py", line 476, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/models.py", line 439, in has_module_perms
+    return _user_has_module_perms(self, module)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/models.py", line 199, in _user_has_module_perms
+    for backend in auth.get_backends():
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 38, in get_backends
+    return _get_backends(return_tuples=False)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 27, in _get_backends
+    backend = load_backend(backend_path)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 21, in load_backend
+    return import_string(path)()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/module_loading.py", line 18, in import_string
+    six.reraise(ImportError, ImportError(msg), sys.exc_info()[2])
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/module_loading.py", line 15, in import_string
+    module_path, class_name = dotted_path.rsplit('.', 1)
+ImportError: d doesn't look like a module path
+2016-09-13 13:07:44,962 [Thread-10:4454690816] [django.request:127] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 364, in login
+    self.each_context(request),
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 283, in each_context
+    'has_permission': self.has_permission(request),
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 174, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/functional.py", line 237, in inner
+    self._setup()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/utils/functional.py", line 383, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 180, in get_user
+    user_id = _get_user_session_key(request)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/auth/__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 57, in __getitem__
+    return self._session[key]
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 379, in get
+    num = len(clone)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 1072, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 842, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 115, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "/Users/doudou/Documents/python/blog/venv/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'jinmeng.django_session' doesn't exist")
+2016-09-13 13:08:07,706 [Thread-3:4422455296] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 13:26:42,053 [Thread-29:4416032768] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 13:26:46,695 [Thread-33:4411564032] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 13:29:33,946 [Thread-54:4424708096] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:29:38,505 [Thread-56:4433121280] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 13:31:49,283 [Thread-69:4437327872] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:31:49,723 [Thread-70:4411564032] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:34:08,414 [Thread-76:4437327872] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:34:09,356 [Thread-79:4411564032] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:36:46,331 [Thread-88:4411564032] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-13 13:36:54,987 [Thread-91:4424708096] [django.request:152] [base:get_response] [WARNING]- Not Found: /list/js/nav.js
+2016-09-13 13:41:59,582 [Thread-14:4589232128] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:44:40,310 [Thread-50:4602114048] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:47:10,122 [Thread-60:4606320640] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:47:10,620 [Thread-62:4580818944] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:47:28,848 [Thread-75:4606320640] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:47:29,003 [Thread-77:4580818944] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:48:30,100 [Thread-91:4606320640] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:48:30,521 [Thread-93:4580818944] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:48:42,693 [Thread-95:4580818944] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 13:48:47,407 [Thread-101:4606320640] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 13:48:49,753 [Thread-120:4580818944] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:50:16,770 [Thread-137:4580818944] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 13:51:17,952 [Thread-160:4602114048] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 13:51:21,848 [Thread-179:4580818944] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:54:22,214 [Thread-182:4580818944] [django.request:152] [base:get_response] [WARNING]- Not Found: /ad/3/4
+2016-09-13 13:55:37,452 [Thread-186:4585287680] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:57:38,171 [Thread-194:4606320640] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:57:38,615 [Thread-197:4580818944] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:57:42,989 [Thread-200:4585287680] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/js/nav.js
+2016-09-13 13:57:55,765 [Thread-210:4606320640] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 13:57:57,098 [Thread-228:4580818944] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/2
+2016-09-13 14:01:24,426 [Thread-4:4508168192] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/2/js/nav.js
+2016-09-13 14:01:25,817 [Thread-10:4508168192] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/2/js/nav.js
+2016-09-13 14:01:29,366 [Thread-13:4508168192] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/1/js/nav.js
+2016-09-13 14:01:31,681 [Thread-16:4508168192] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/2/js/nav.js
+2016-09-13 14:01:45,583 [Thread-19:4508168192] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 14:07:12,438 [Thread-22:4508168192] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 14:07:14,326 [Thread-25:4508168192] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
+2016-09-13 14:07:15,623 [Thread-27:4508168192] [django.request:152] [base:get_response] [WARNING]- Not Found: /portal.php
+2016-09-13 14:08:03,723 [Thread-29:4508168192] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/2/js/nav.js
+2016-09-13 14:08:06,573 [Thread-32:4508168192] [django.request:152] [base:get_response] [WARNING]- Not Found: /article/1/js/nav.js
+2016-09-13 14:08:22,013 [Thread-36:4508168192] [django.request:152] [base:get_response] [WARNING]- Not Found: /js/nav.js
